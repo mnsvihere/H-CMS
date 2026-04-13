@@ -21,7 +21,7 @@ string inputPassword() {
     char ch;
 
     while (true) {
-        ch = _cin.get();
+        ch = cin.get();
 
         if (ch == 13) break; // Enter key
 
