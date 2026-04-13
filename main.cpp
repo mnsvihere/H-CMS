@@ -6,7 +6,6 @@
 #include <iomanip>
 #include <limits>
 #include <cstdlib>
-#include <conio.h>
 
 // Windows (Dev C++ / MinGW) uses <direct.h> and _mkdir
 // Linux / Mac uses <sys/stat.h> and mkdir
@@ -22,7 +21,7 @@ string inputPassword() {
     char ch;
 
     while (true) {
-        ch = _getch();
+        ch = _cin.get();
 
         if (ch == 13) break; // Enter key
 
